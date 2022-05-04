@@ -1,0 +1,62 @@
+@import '../index.scss';
+
+.pannel {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 5px 0;
+    align-items: center;
+    // background-color: red;
+
+    button {
+        padding: 5px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        @include btn_background;
+    }
+
+
+
+    select {
+        @include btn_background;
+        padding: 5px 0;
+        margin-right: 5px;
+
+        option {
+            color: black;
+        }
+    }
+
+
+
+}
+
+.panell_info {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+
+    .pannel_cap,
+    .pannel_sup {
+        display: none;
+
+        @media (min-width: 599px) {
+            display: flex;
+        }
+    }
+}
+
+.pannel_info--type {
+    flex-basis: 45%;
+
+    @media (min-width: 599px) {
+        flex-basis: 35%;
+    }
+
+
+
+
+    &:nth-child(1) {
+        flex-basis: 10%;
+    }
+}

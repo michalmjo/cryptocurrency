@@ -1,0 +1,69 @@
+@import '../index.scss';
+
+
+
+
+
+.currency {
+    margin: 5px 0;
+    list-style: none;
+    @include btn_background;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease;
+
+
+
+
+    .btn_delete {
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+
+        &--trash {
+            transition: all 0.4s;
+            margin-right: 5px;
+            padding: 5px;
+
+            &:hover {
+                color: rgb(63, 220, 20);
+            }
+        }
+    }
+}
+
+.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.crypto__list {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin: 0 10px 0 5px;
+    flex-grow: 1;
+
+    justify-content: flex-start;
+
+
+    &:not(:first-child) {
+        flex-basis: 35%;
+    }
+
+
+
+    .crypto_cap,
+    .crypto_suppy {
+        display: none;
+
+        @media (min-width: 600px) {
+            display: flex;
+        }
+    }
+
+    @media (min-width:600px) {
+        font-size: 1.6rem;
+    }
+}

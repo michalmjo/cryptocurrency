@@ -1,0 +1,100 @@
+.mainNav {
+    width: 100%;
+    background-color: rgba($color: white, $alpha: 0.2);
+
+    &__marketCap {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+
+
+
+        &--trading,
+        .searchForm {
+            display: flex;
+            align-items: center;
+            flex-basis: 50%;
+            list-style: none;
+            justify-content: space-around;
+
+            li {
+                padding: 3px 5px;
+                cursor: pointer;
+
+
+
+
+                &.mainNav__marketCap--cap,
+                &.mainNav__marketCap--sup {
+                    display: none;
+                }
+
+                @media (min-width: 599px) {
+                    font-size: 1.2rem;
+
+                    &.mainNav__marketCap--cap,
+                    &.mainNav__marketCap--sup {
+                        display: flex;
+                    }
+                }
+
+                .arrow {
+                    margin-left: 5px;
+                    align-self: center;
+                }
+
+            }
+
+            input {
+                width: 70%;
+                outline: none;
+                border: none;
+                background-color: rgba($color: white, $alpha: 0.2);
+                margin: 0 5px 0 0;
+                padding: 5px;
+                color: white;
+            }
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: rgba($color: white, $alpha: 0.8);
+                transition: all 0.5s;
+
+                &:hover {
+                    color: rgba($color: white, $alpha: 1);
+                }
+            }
+
+            .search_icon {
+                margin-right: 30px;
+            }
+
+
+        }
+
+        &--trading {
+            @media (min-width: 599px) {
+                justify-content: flex-start;
+            }
+
+
+        }
+
+        .searchForm {
+            @media (min-width:599px) {
+                justify-content: flex-end;
+
+                input {
+                    width: 30%;
+                }
+            }
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,25 @@
+.showSliding {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.178);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+.mainTitle {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+
+  @media (min-width: 599px) {
+    font-size: 3rem;
+  }
+}
+
+
+@media (min-width: 1279px) {
+  .wrapper {
+    width: 1279px;
+    margin: 0 auto;
+  }
+}
