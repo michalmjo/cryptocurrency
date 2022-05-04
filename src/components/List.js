@@ -19,7 +19,7 @@ const List = ({ dane }) => {
 
   return (
     <>
-      <li className="currency">
+      <li className="currency active">
         <div className="crypto__list">
           <p className="crypto__list crypto_rank"> {parseInt(rank)}</p>
           <p className="crypto__list crypto_id">

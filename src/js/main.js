@@ -1,10 +1,10 @@
-window.onload = function showSome() {
-  show();
-};
+// window.onload = function showSome() {
+//   show();
+// };
 
 export function show(type = "") {
   const itemList = document.querySelectorAll(".currency");
-  console.log(type);
+
   if (type === "all") {
     itemList.forEach((item) => item.classList.add("active"));
   }

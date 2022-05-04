@@ -168,8 +168,9 @@ const Navigation = ({ data }) => {
     }
 
     const index = data.filter((item) => {
-      if (item.id !== value) return console.log("bue nas");
-      return item.id.toLowerCase() === value.toLocaleLowerCase();
+      const inputValue = value.toLowerCase();
+      if (item.id !== inputValue) return null;
+      return item.id.toLowerCase() === inputValue;
     });
     if (index.length === 0 && value.length >= 1) {
       return newMessage();
