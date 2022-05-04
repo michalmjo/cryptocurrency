@@ -1,5 +1,5 @@
 Run App Live
-[GH Pages](https://github.com/michalmjo/cryptocurrency.git)
+[GH Pages](https://michalmjo.github.io/cryptocurrency/)
 
 # Getting Started with Create React App
 
