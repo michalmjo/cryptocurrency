@@ -135,7 +135,7 @@ const Navigation = ({ data }) => {
         fontWeight: "bold",
       }}
     >
-      Podaj przynajmiej 2 znaki
+      Enter at least 2 characters
     </span>
   );
   const messageCrypto = (
@@ -147,7 +147,7 @@ const Navigation = ({ data }) => {
         fontWeight: "bold",
       }}
     >
-      Nie znaleziono na liście
+      Not found in the list
     </span>
   );
 
